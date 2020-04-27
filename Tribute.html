@@ -1,0 +1,154 @@
+<!--------------------------------------------------------------
+* References: https://www.youtube.com/watch?v=_n64hIV3F4A 
+* Christian Yap April 20, 2020
+* https://css-tricks.com/the-css-box-model/
+* https://www.youtube.com/watch?v=rIO5326FgPE
+--------------------------------------------------------------->
+<!DOCTYPE HTML5>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<style>
+
+	#title
+	{
+		width: 100%;
+		text-align: center;
+		background-color: green;
+	}
+
+	#img-div
+	{
+		display: flex;
+		margin: 10px 4px;    /* https://www.w3schools.com/csS/css_padding.asp */
+		justify-content: center;
+		flex-wrap: wrap;
+
+	}
+	
+	p
+	{
+		text-align: center;
+	}
+
+	.column
+	{
+		padding: 0 4px;
+		background-color: blue;
+		border: 1px #000 solid;
+		width: 20%;
+	}
+	
+	.figs{
+		background-color: white;
+		text-align: center;
+		font-family: Comic Sans MS;
+		font-size: 25px;
+		font-style: normal;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+
+	.column img
+	{
+		margin-top: 8px;   /* https://www.w3schools.com/CSSref/pr_dim_width.asp */
+		width: 100%;
+		height: auto;
+		border: #000 solid 1px;
+	} 
+
+	/* Responsive layout - makes a two column-layout instead of four columns */
+	@media screen and (max-width: 800px) {
+	  .column {
+	  	flex: 100%;
+	    flex-direction: column;
+		width: 100%;
+	  }
+	}
+
+	/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+	@media screen and (max-width: 400px) {
+	  .column {
+	  	flex: 100%;
+	    flex-direction: column;
+		width: 100%;
+
+	  }
+	}
+	
+</style>
+
+<html>
+	<!-- Head -->
+	<head>
+		<title>ThePhatYap</title>
+	</head>
+
+	<!--  Body -->
+	<body>
+		<div id="main">
+			<!-- Title -->
+			<h1 id="title">Christian Yap</h1>
+
+			<!-- IMAGE DIV -->
+			<div id="img-div">
+				<div class = "column">
+					<figure>
+						<img id="image" src="https://th.bing.com/th/id/OIP.8VOxJjzHwzG3FIui2YOW7gHaHa?pid=Api&rs=1" alt="Christian Yap Portrait">
+					</figure>
+					<figcaption class="figs">
+						<p id="img-caption">
+							<em>Currently working towards an MBA with an emphasis in fantasy football.</em>
+						</p>
+					</figcaption>
+				</div>
+				<div class = "column">
+					<figure>
+						<img id="image" src="https://pbs.twimg.com/profile_images/605132358870777857/fLH4BaVx_400x400.jpg" alt="Christian Yap Portrait">
+					</figure>
+					<figcaption class="figs">
+						<p id="img-caption">
+							<em>Currently working.</em>
+						</p>
+					</figcaption>
+				</div>
+				<div class = "column">
+					<figure class="figs">
+						<img id="image" src="https://pbs.twimg.com/media/ENaAsnEUEAAsApm?format=jpg&name=small" alt="Christian Yap Portrait">
+					</figure>
+					<figcaption class="figs">
+						<p id="img-caption">
+							<em>Working.</em>
+						</p>
+					</figcaption>
+				</div>
+				<div class = "column">
+					<figure>
+						<img id="image" src="https://pbs.twimg.com/media/EFKcWP3UYAAa6VQ?format=jpg&name=small" alt="Christian Yap Portrait">
+					</figure>
+					<figcaption class="figs">
+						<p id="img-caption">
+							<em>Currently working toward.</em>
+						</p>
+					</figcaption>
+				</div>
+			</div>
+
+			<!-- TRIBUTE DIV -->
+			<div id="tribute-info">	
+						<p>Sometimes I just want to give it all up and become a handsome billionaire.</p>
+						<p>Puttin’ the ‘elation’ in ‘Public Relations’</p>
+						<p>I always feel sad for seedless watermelons, because what if they wanted babies?</p>
+						<p>I have friends in spite of myself.</p>
+						<p>Probably the best meat eater in the world</p>
+						<p>I always feel sad for seedless watermelons, because what if they wanted babies?</p>
+						<p>Will show ankle for five minutes of wireless.</p>
+						<p>A man of mystery and power, whose power is exceeded only by his mystery.</p>
+						<p><a href="https://businessesgrow.com/2011/04/21/the-20-all-time-funniest-twitter-bios-part-2/" target="_blank" id="tribute-link">For More Information about the GOAT</a></p>
+			</div>
+
+		</div>
+	</body>
+
+	<!-- Footer -->
+	<footer>
+	</footer>
+</html>
